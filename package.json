@@ -7,9 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "type": "docker exec -it test yarn tsc -b",
-    "dep": "docker exec -it test yarn"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
