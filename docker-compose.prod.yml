@@ -3,3 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      target: deploy
+    container_name: deploy
+    ports:
+      - 80:80

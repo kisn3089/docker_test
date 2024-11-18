@@ -1,0 +1,12 @@
+services:
+  front:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: develop
+    container_name: develop
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src:ro
+      - ./public:/app/public:ro
